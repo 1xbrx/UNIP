@@ -1,0 +1,575 @@
+
+/* GOOGLE FONTS*/
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+/*Estilo Geral*/
+*{
+    margin: 0; /* margem*/
+    padding: 0; /* quando passar o cursor */
+    box-sizing: border-box; /* quando passar o cursor */
+    font-family: Poppins; /* quando passar o cursor */
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(0,151,178);
+    background: linear-gradient(90deg, rgba(0,151,178,1) 32%, rgba(126,217,87,1) 77%);
+    height: 100vh;  /* quando passar o cursor */
+}
+
+.interface{
+    max-width: 1280px; /*largura maxima*/
+    margin: 0 auto;
+
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    font-size: 38px;
+    color: white;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: green;
+}
+
+button:hover, form .btn-submit input:hover{
+  box-shadow: 0px 0px 8px white;
+  transform: scale(1.05);
+}
+
+.id:hover{
+  transition: 5s;
+}
+
+/* Estilo do Cabecalho */
+
+header{
+    padding: 20px 4%;
+}
+
+header > .interface {
+    display: flex; /* quando passar o cursor */
+    align-items: center;  /* quando passar o cursor */
+    justify-content: space-between;  /* quando passar o cursor */
+    
+}
+
+
+header .logo{
+    transition: 0.2s;
+    display: flex;
+    cursor: pointer;
+    width: 140px;
+    height: 140px;
+}
+
+header .logo:hover{
+    transform: scale(1.05);
+}
+
+header a{
+    color: white;
+    text-decoration: none; /* quando passar o cursor */
+    display: inline-block; /* quando passar o cursor */
+    transition: .2s; /* transicao*/
+}
+
+header a:hover{  /* quando passar o cursor */
+    color: white;
+    transform: scale(1.08); /* pulsar */
+}
+
+header nav ul{
+    list-style-type: none; /* quando passar o cursor */
+}
+
+header nav ul li{
+    padding: 0 40px;
+    display: inline-block;
+    font-size: 17px;
+}
+
+header .btn-donacion button{
+    padding: 10px 40px;
+    font-size: 18px;  /* quando passar o cursor */
+   font-weight: 600; /* quando passar o cursor */
+    background-color: green;
+    color: white;
+    border: 0;  /* quando passar o cursor */
+    border-radius: 30px;  /* quando passar o cursor */
+    cursor: pointer; /* quando passar o cursor */
+}
+
+header .btn-donacion button:hover{
+    box-shadow: 0px 0px 8px white;
+
+}
+
+.borda{ 
+  border-top: 2px solid white;
+ padding-top: 20px;
+}
+
+/* Estilo do topo do site*/
+
+section.topo-do-site{
+    padding: 40px 4%; /* Pra nao ficar colado*/
+}
+
+
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px; /* espacamento */
+}
+
+.topo-do-site h1{
+    font-size: 40px;
+    color: white;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: green;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    border-radius: 30px;
+
+}
+
+section .btn-donacion button{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 40px;
+}
+
+section .btn-donacion button:hover{
+    box-shadow: white;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+/* ESTILOS DAS DIVISOES */
+
+section.esg{
+    padding: 80px 4%;
+}
+
+section.esg .flex{
+    gap: 60px;
+}
+
+.esg .divisoes-box{
+    color: green;
+    padding:20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255, 20%);
+   
+}
+
+
+
+.esg .divisoes-box:hover{
+    transform: scale(1.05);
+    transition: .2s;
+    cursor: pointer;
+    box-shadow: 0 0 8px white;
+}
+
+.esg .divisoes-box h3{
+    font-size: 28px;
+    margin: 15px;
+    color: #117E17;
+}
+
+.esg .divisoes-box p{
+    color: white;
+    margin: 15px;
+}
+
+/* ESTILOS DO VIDEO */
+section.apresentacao{
+  padding: 80px 4%;
+}
+
+section.apresentacao .flex{
+    margin-top: 20px;
+    gap: 90px; /* espacamento */
+}
+
+.apresentacao .video-container{
+   padding: 40px;
+   border-radius: 30px;
+   border: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.apresentacao .video-container video{
+  border-radius: 30px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.apresentacao .text-support h1{
+  font-size: 40px;
+    color: white;
+    line-height: 20px;
+    padding: 50px;
+}
+
+.apresentacao .text-support p{
+  color: white;
+    margin: 10px 0;
+}
+
+/* ESTILOS DOS PORTIFOLIOS */
+
+section.portifolio{
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px rgba(173, 216, 230, 0.562);
+}
+
+section.portifolio .flex{
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.img-port{
+  width: 360px;
+  height: 460px;
+ background-size: cover;
+ background-position: 100% 0;
+ transition: .5s;
+ cursor: pointer;
+ border-radius: 40px;
+ position: relative;
+}
+
+.img-port:hover{
+  background-position: 100% 100;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.585);
+  border-radius: 40px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  opacity: 0;
+  transition: .5s;
+}
+
+.overlay:hover{
+  opacity: 1;
+}
+
+
+/* ESTILOS DO FORMULARIO */
+
+section.formulario{
+  padding: 80px 4%;
+}
+
+form{
+  max-width: 500px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px;
+}
+
+form input, form textarea{
+  width: 100%;
+  background-color: green;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+form input::placeholder{
+  color: white;
+}
+
+form textarea{
+  resize: none;
+  max-height: 400px;
+}
+
+form textarea::placeholder{
+  color: white;
+}
+
+form .btn-submit{
+  margin-top: 20px;
+  text-align: center;
+  
+}
+
+form .btn-submit input{
+    width: 100px;
+    background-color: white;
+    color: green;
+    cursor: pointer;
+    font-weight: 700 ;
+    transition: .2s;
+}
+
+
+/* ESTILOS DO sobre nos */
+
+section.sobre-nos{
+  padding: 40px 4%;
+}
+
+
+section.sobre-nos .flex{
+ margin-top: 20px;
+  gap: 50px;
+}
+
+.sobre-nos .img-empresa img{
+  border-radius: 30px;
+}
+
+.sobre-nos h1 {
+  
+  color: white;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.sobre-nos h1 span{
+  color: green;
+}
+
+.sobre-nos p{
+  margin-top: 30px;
+  color: white;
+}
+
+/* ESTILOS DO RODAPE*/
+
+footer{
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px rgba(173, 216, 230, 0.562);
+}
+
+footer .flex{
+  justify-content: space-between;
+}
+
+footer .line-footer p{
+    color: white;
+}
+
+footer .line-footer p a{
+    color: white;
+}
+
+
+@media screen and (max-width:1200px) {
+  
+  .flex{
+    flex-direction: column-reverse;
+  }
+
+
+  /*CABECALHO*/
+  .menu-desktop, .btn-donacion{
+    display: none;
+  }
+
+
+  .topo-do-site .img-topo-site img{
+    border-radius: 30px;
+    width: 360PX;
+    height: 400px;
+}
+
+.esg .divisoes-box{
+  color: green;
+  padding:20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255, 20%);
+ gap: 40px;
+}
+
+.img-port{
+  width: 300px;
+  height: 400px;
+ background-size: cover;
+ background-position: 100% 0;
+ transition: .5s;
+ cursor: pointer;
+ border-radius: 40px;
+ position: center;
+  gap: 40px;
+}
+
+section.portifolio .flex{
+  justify-content: space-around;
+  padding: 30px;
+  gap: 40px;
+}
+
+.apresentacao .video-container{
+  padding: 40px;
+  border-radius: 30px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+ 
+}
+
+.apresentacao .video-container video{
+  border-radius: 30px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+}
